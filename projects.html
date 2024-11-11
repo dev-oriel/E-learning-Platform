@@ -27,10 +27,20 @@
         <div class="sub-menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li>Services</li>
+                <li><a href="service.html">Services</a></li>
                 <li><a href="dashboard.html">Dashboard</a>
                 </li>
                 <li><a href="help.html">help</a></li>
+                <li>
+                    <div id="user"> 
+                        <div class="img">
+                            <img src="assets/oriel.jpg" alt="img">
+                        </div>
+                        <div class="details">
+                            <p>Oriel</p>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -46,17 +56,14 @@
             </div>
         </div>
         <div id="lower">
+            <div id="categories" >
+                <h3><a href="dashboard.html">DASHBOARD</a></h3>
+            </div>
             <div id="categories">
                 <h3><a href="personal_details.html">Personnal Details</a></h3>
             </div>
-            <div id="categories" >
-                <h3><a href="dashboard.html">Courses</a></h3>
-            </div>
-            <div id="categories">
-                <h3>Ongoing courses</h3>
-            </div>
             <div id="categories" class="active">
-                <h3>Projects</h3>
+                <h3><a class="active" >Projects</a></h3>
             </div>
             <div id="categories">
                 <h3><a href="quizes.html">Quizes & Cats</a></h3>
@@ -73,32 +80,27 @@
         <div class="top">
             <div id="icon"><img src="assets/icon.png" alt=""></div>
             <div id="cate">
-                <p>Projects</p>
-            </div>
-            <div id="user">
-                <div class="img">
-                    <img src="assets/oriel.jpg" alt="img">
-                </div>
-                <div class="details">
-                    <p>Oriel kiplangat</p>
-                </div>
+                <p style="text-transform: uppercase;">Projects</p>
             </div>
         </div>
         <!--WORKSPACE-->
 <!--=============== MAIN ===============-->
 <main class="main">
-    <section class="filters container">
-        <!--=============== FILTERS TABS ===============-->
+    <section class="filters container" style="overflow: auto;">
+        <!--=============== FILTERS TABS ===============--
         <ul class="filters__content">
             <button class="filters__button filter-tab-active" data-target="#projects">
                 Projects
             </button>
-            <button class="filters__button" data-target="#skills">
-                Skills
-            </button>
         </ul>
-
-        <div class="filters__sections">
+    -->
+        <div class="filters__sections"
+        style="
+        margin-top: 20px;
+        
+        "
+        
+        >
             <!--=============== PROJECTS ===============-->
             <div class="projects__content grid filters__active" data-content id="projects">
                 <article class="projects__card">
@@ -106,11 +108,11 @@
 
                     <div class="projects__modal">
                         <div>
-                            <span class="projects__subtitle"> GWN</span>
-                            <h3 class="projects__title">grey worm nft</h3>
-                            <a href="https://github.com/trent130"
+                            <span class="projects__subtitle">grey worm nft </span>
+                            <h3 class="projects__title">ATM Machine with Js</h3>
+                            <a href="https://github.com/orii-blackmark"
                                 class="projects__button button button__small">
-                                <i class="ri-link"></i>
+                                <i class="ri-link">github</i>
                             </a>
                         </div>
                     </div>
@@ -125,7 +127,7 @@
                             <h3 class="projects__title">Responsive Website</h3>
                             <a href="https://github.com/trent130"
                                 class="projects__button button button__small">
-                                <i class="ri-link"></i>
+                                <i class="ri-link">github</i>
                             </a>
                         </div>
                     </div>
@@ -138,9 +140,9 @@
                         <div>
                             <span class="projects__subtitle">python</span>
                             <h3 class="projects__title">django framework</h3>
-                            <a href="https://github.com/trent130"
+                            <a href="https://github.com/orii-blackmark"
                                 class="projects__button button button__small">
-                                <i class="ri-link"></i>
+                                <i class="ri-link">github</i>
                             </a>
                         </div>
                     </div>
@@ -155,12 +157,12 @@
                             <h3 class="projects__title">encryption bypassing tool</h3>
                             <a href="https://github.com/trent130"
                                 class="projects__button button button__small">
-                                <i class="ri-link"></i>
+                                <i class="ri-link">github</i>
                             </a>
                         </div>
                     </div>
                 </article>
-            <!--=============== SKILLS ===============-->
+            <!--=============== SKILLS ===============--
             <div class="skills__content grid" data-content id="skills">
                 <div class="skills__area">
                     <h3 class="skills__title">Frontend Developer</h3>
@@ -214,6 +216,7 @@
                     </div>
                 </div>
             </div>
+        -->
     </section>
 </main>
 <!--=============== SCROLLREVEAL ===============-->
